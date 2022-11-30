@@ -2,7 +2,7 @@
 
 int main()
 {
-    char choice = '';
+    char choice = ' ';
     do{
         scanf(" %c", &choice);
         switch (choice)

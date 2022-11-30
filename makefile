@@ -1,14 +1,20 @@
-connections: main.o my_mat.a
-	gcc -o connections main.o my_mat.a
+all: my_mat.so connections
 
-my_mat.a: my_mat.o my_mat.h
-	ar -rcs my_mat.a my_mat.o 
+my_mat: my_mat.so
 
-main.o: main.c my_mat.h
-	gcc -c main.c
+connections: main.o my_mat.so
+	gcc -Wall -g -o connections main.o ./my_mat.so
+
+my_mat.so: my_mat.o my_mat.h
+	gcc -shared -o my_mat.so my_mat.o 
+
+main.o: main.c
+	gcc -Wall -g -c main.c
 
 my_mat.o: my_mat.c my_mat.h
-	gcc -c my_mat.c
+	gcc -Wall -g -fPIC -c my_mat.c
+
+.PHONY: clean all
 
 clean:
-	rm *.o my_mat.a connections
+	rm *.o my_mat.so connections
