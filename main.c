@@ -1,7 +1,6 @@
 #include "my_mat.h"
 
-int main()
-{
+int main() {
     char choice = ' ';
     do{
         scanf(" %c", &choice);
