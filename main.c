@@ -17,16 +17,16 @@ int main()
                 int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
                 if(isPath(i, j) == TRUE)
-                    printf("\nTrue");
+                    printf("True\n");
                 else
-                    printf("\nFalse");
+                    printf("False\n");
                 break;
             }
             case FUNC3:
             {
                 int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
-                printf("\n%d", shortestPath(i, j));
+                printf("%d\n", shortestPath(i, j));
             }
             case EXIT:
                 break;
