@@ -11,4 +11,4 @@ my_mat.o: my_mat.c my_mat.h
 	gcc -c my_mat.c
 
 clean:
-	rm *.o progmain
+	rm *.o my_mat.a connections

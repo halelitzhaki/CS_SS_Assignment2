@@ -11,7 +11,7 @@
 #define FUNC2 'B'
 #define FUNC3 'C'
 #define EXIT 'D'
-#define INFINITY 4000000
+#define INFINITY 40000000
 
 int matrix[LENGTH][LENGTH];
 int matShortPath[LENGTH][LENGTH];

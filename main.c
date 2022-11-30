@@ -2,7 +2,7 @@
 
 int main()
 {
-    char choice;
+    char choice = '';
     do{
         scanf(" %c", &choice);
         switch (choice)
@@ -14,7 +14,7 @@ int main()
             }
             case FUNC2:
             {
-                int i, j;
+                int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
                 if(isPath(i, j) == TRUE)
                     printf("\nTrue");
@@ -24,7 +24,7 @@ int main()
             }
             case FUNC3:
             {
-                int i, j;
+                int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
                 printf("\n%d", shortestPath(i, j));
             }
