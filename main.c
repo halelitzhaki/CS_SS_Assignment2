@@ -26,6 +26,7 @@ int main() {
                 int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
                 printf("%d", shortestPath(i, j));
+                break;
             }
             case EXIT:
                 break;

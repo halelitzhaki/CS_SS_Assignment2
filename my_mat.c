@@ -20,7 +20,7 @@ int isPath(int i, int j)
 
 int shortestPath(int i, int j)
 {
-    if(matShortPath[i][j] == 0 || matShortPath[i][j] == INFINITY) return -1;
+    if(matShortPath[i][j] == 0 || matShortPath[i][j] >= INFINITY) return -1;
     return matShortPath[i][j];
 }
 
