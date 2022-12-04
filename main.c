@@ -16,21 +16,22 @@ int main() {
                 int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
                 if(isPath(i, j) == TRUE)
-                    printf("True\n");
+                    printf("True");
                 else
-                    printf("False\n");
+                    printf("False");
                 break;
             }
             case FUNC3:
             {
                 int i = 0, j = 0;
                 scanf(" %d %d", &i, &j);
-                printf("%d\n", shortestPath(i, j));
+                printf("%d", shortestPath(i, j));
             }
             case EXIT:
                 break;
         }
-    }while (choice != 'D');
+        if((choice != EXIT) && (choice == FUNC2 || choice == FUNC3)) printf("\n");
+    }while (choice != EXIT);
     
     return 0;
 }
